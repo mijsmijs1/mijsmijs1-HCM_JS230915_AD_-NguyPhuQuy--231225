@@ -1,0 +1,30 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root:@127.0.0.1:3306/hakathon-25/12"
+}
+
+model todoList {
+  id   Int    @id @default(autoincrement())
+  name String @db.Char(255)
+  decs String @db.Text
+}
+
+model users {
+  id       Int      @id @default(autoincrement())
+  loginId  String   @unique
+  password String
+  createAt String
+  role     userRole @default(user)
+}
+
+enum userRole {
+  admin
+  user
+}

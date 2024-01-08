@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    background-image: url('https://img.freepik.com/premium-vector/white-christmas-background-with-space-text_134545-30.jpg?w=2000');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+
+    .authen {
+        position: absolute;
+        top: 20px;
+        right: 350px;
+
+        .btn_authen_logout {
+            width: 80px;
+            height: 40px;
+            font-size: 18px;
+            color: white;
+            background-color: #EB0B0D;
+            border: none;
+            border-radius: 5px;
+            margin-right: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #EB0B0D;
+            }
+        }
+
+        .btn_authen_login {
+            width: 80px;
+            height: 40px;
+            font-size: 18px;
+            color: white;
+            background-color: #256DCC;
+            border: none;
+            border-radius: 5px;
+            margin: 8px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #1675f1;
+            }
+        }
+    }
+
+    .app-container {
+        margin-top: 20px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .create-button {
+            width: 30%;
+            height: 50px;
+            font-size: 24px;
+            color: white;
+            background-color: #34AF51;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #2ce958;
+            }
+        }
+
+        .title {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px 3px #F0F0F0;
+            margin: 20px 0;
+            background-color: white;
+
+            h4 {
+                margin: 0;
+
+            }
+        }
+
+        .table-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px 3px #F0F0F0;
+            margin-top: 5px;
+            background-color: white;
+
+            table {
+
+                th,
+                td {
+                    text-align: center;
+                }
+            }
+
+        }
+    }
+}
